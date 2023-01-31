@@ -1,0 +1,32 @@
+﻿<Sql TableName="BCBindingCustom" TableSchemaXml="#CDATA">
+    <CDATA name="TableSchemaXml"><![CDATA[<table name="BCBindingCustom">
+  <col name="CompanyID" type="Int" default="Zero" />
+  <col name="BindingID" type="Int" />
+  <col name="ApiBaseUrl" type="NVarChar(MAX)" nullable="true" />
+  <col name="ApiKey" type="NVarChar(MAX)" nullable="true" />
+  <col name="ApiPassword" type="NVarChar(MAX)" nullable="true" />
+  <col name="ApiToken" type="NVarChar(MAX)" nullable="true" />
+  <col name="ApiTokenSecret" type="NVarChar(MAX)" nullable="true" />
+  <col name="StoreUrl" type="NVarChar(MAX)" nullable="true" />
+  <col name="StoreTimeZone" type="NVarChar(100)" nullable="true" />
+  <col name="DefaultCurrency" type="NVarChar(12)" nullable="true" />
+  <col name="StoreName" type="NVarChar(250)" nullable="true" />
+  <col name="BranchID" type="Int" nullable="true" />
+  <col name="NoteID" type="UniqueIdentifier" nullable="true" />
+  <col name="tstamp" type="Timestamp" />
+  <col name="CreatedByID" type="UniqueIdentifier" />
+  <col name="CreatedByScreenID" type="Char(8)" />
+  <col name="CreatedDateTime" type="SmallDateTime" />
+  <col name="LastModifiedByID" type="UniqueIdentifier" />
+  <col name="LastModifiedByScreenID" type="Char(8)" />
+  <col name="LastModifiedDateTime" type="SmallDateTime" />
+  <index name="BCBindingCustom_NoteID" unique="true">
+    <col name="NoteID" />
+    <col name="CompanyID" />
+  </index>
+  <index name="PK_BCBindingCustom" clustered="true" primary="true" unique="true">
+    <col name="CompanyID" />
+    <col name="BindingID" />
+  </index>
+</table>]]></CDATA>
+</Sql>
